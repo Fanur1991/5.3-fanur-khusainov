@@ -1,0 +1,18 @@
+{
+  "_id": "ObjectId",
+  "name": {
+    "type": "String",
+    "required": true
+  },
+  "address": {
+    "type": "String",
+    "required": true
+  },
+  "telephone": "String",
+  "email": {
+    "type": "String",
+    "required": true
+  },
+  "register_date": "Date",
+  "last_shoppings_id": ["ObjectId"]
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "ObjectId",
+  "address": {
+    "type": "String",
+    "required": true
+  },
+  "postal_code": {
+    "type": "String",
+    "required": true
+  },
+  "city": {
+    "type": "String",
+    "required": true
+  },
+  "province": {
+    "type": "String",
+    "required": true
+  }
+}

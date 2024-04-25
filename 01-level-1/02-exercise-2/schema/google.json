@@ -1,0 +1,13 @@
+{
+  "_id": "ObjectId",
+  "brand": {
+    "type": "String",
+    "required": true
+  },
+  "frame": ["String", "String", "String"],
+  "provider_id": "ObjectId",
+  "price": {
+    "type": "Number",
+    "required": true
+  }
+}
