@@ -67,10 +67,10 @@ Este nivel representa una versión reducida de YouTube con las siguientes caract
 #### Modelaje:
 
 1. **Diseño de la base de datos para una versión reducida de YouTube.**
-   - El ejercicio pide que se considere la información necesaria para manejar usuarios, videos, canales y listas de reproducción.
-   <p align="center">
-     <img src="./03-level-3/taskView/view.jpg">
-   </p>
+- El ejercicio pide que se considere la información necesaria para manejar usuarios, videos, canales y listas de reproducción.
+<p align="center">
+ <img src="./03-level-3/taskView/view.jpg">
+</p>
 
 ## Licencia
 
