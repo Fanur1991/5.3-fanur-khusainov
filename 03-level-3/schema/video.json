@@ -1,0 +1,36 @@
+{
+  "_id": "ObjectId",
+  "title": {
+    "type": "String",
+    "required": true
+  },
+  "description": {
+    "type": "String",
+    "required": true
+  },
+  "size": "String",
+  "video_file_name": "String",
+  "duration": "String",
+  "thumbnail": "String",
+  "views": {
+    "type": "Number",
+    "default": 0
+  },
+  "likes": {
+    "type": "Number",
+    "default": 0
+  },
+  "dislikes": {
+    "type": "Number",
+    "default": 0
+  },
+  "status": {
+    "type": "String",
+    "required": true
+  },
+  "tags": [{ "type": "String" }],
+  "uploader": {
+    "user_id": "ObjectId",
+    "upload_date": "Date"
+  }
+}
