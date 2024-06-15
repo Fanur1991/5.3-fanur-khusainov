@@ -9,6 +9,8 @@
   "videos": [
     {
       "video_id": "ObjectId",
+      "title": "String",
+      "thumbnail": "String",
       "added_date": "Date"
     }
   ]

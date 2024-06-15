@@ -16,14 +16,18 @@
     "type": "Number",
     "default": 0
   },
-  "likes": {
-    "type": "Number",
-    "default": 0
-  },
-  "dislikes": {
-    "type": "Number",
-    "default": 0
-  },
+  "likes": [
+    {
+      "user_id": "ObjectId",
+      "date_time": "Date"
+    }
+  ],
+  "dislikes": [
+    {
+      "user_id": "ObjectId",
+      "date_time": "Date"
+    }
+  ],
   "status": {
     "type": "String",
     "required": true
@@ -32,5 +36,13 @@
   "uploader": {
     "user_id": "ObjectId",
     "upload_date": "Date"
-  }
+  },
+  "comments": [
+    {
+      "_id": "ObjectId",
+      "comment": "String",
+      "user_id": "ObjectId",
+      "creation_date": "Date"
+    }
+  ]
 }

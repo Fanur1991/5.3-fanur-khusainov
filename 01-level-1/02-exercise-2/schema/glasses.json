@@ -1,0 +1,29 @@
+{
+  "_id": "ObjectId",
+  "brand": "String",
+  "frame_types": ["String"],
+  "provider": {
+    "_id": "ObjectId",
+    "name": "String",
+    "address": {
+      "street": "String",
+      "number": "Number",
+      "flat": "String",
+      "door": "String",
+      "city": "String",
+      "postal_code": "Number",
+      "country": "String"
+    },
+    "telephone": "String",
+    "fax": "String",
+    "nif": "String"
+  },
+  "price": "Number",
+  "bought_by": [
+    {
+      "customer_id": "ObjectId",
+      "sale_date": "Date",
+      "employee_id": "ObjectId"
+    }
+  ]
+}

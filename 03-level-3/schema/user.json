@@ -17,5 +17,10 @@
   "birthdate": "Date",
   "gender": "String",
   "country": "String",
-  "postal_code": "String"
+  "postal_code": "String",
+  "subscriptions": [
+    {
+      "channel_id": "ObjectId"
+    }
+  ]
 }

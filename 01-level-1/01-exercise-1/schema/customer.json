@@ -1,18 +1,24 @@
 {
   "_id": "ObjectId",
-  "name": {
-    "type": "String",
-    "required": true
-  },
-  "address": {
-    "type": "String",
-    "required": true
-  },
+  "name": "String",
+  "address": "String",
   "telephone": "String",
-  "email": {
-    "type": "String",
-    "required": true
-  },
+  "email": "String",
   "register_date": "Date",
-  "last_shoppings_id": ["ObjectId"]
+  "last_shoppings": [
+    {
+      "_id": "ObjectId",
+      "brand": "String",
+      "graduation": {
+        "left": "Number",
+        "right": "Number"
+      },
+      "frame_type": "String",
+      "glass_color": {
+        "left": "String",
+        "right": "String"
+      },
+      "price": "Number"
+    }
+  ]
 }

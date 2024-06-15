@@ -1,7 +1,0 @@
-{
-  "_id": "ObjectId",
-  "comment": "String",
-  "user_id": "ObjectId",
-  "video_id": "ObjectId",
-  "creation_date": "Date"
-}

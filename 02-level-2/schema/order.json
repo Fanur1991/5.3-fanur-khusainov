@@ -4,12 +4,22 @@
   "shop_id": "ObjectId",
   "order_date": "Date",
   "delivery_type": "String",
+  "total_price": "Number",
+  "note": "String",
+  "delivery": {
+    "_id": "ObjectId",
+    "delivery_person_id": "ObjectId",
+    "delivery_date": "Date"
+  },
   "products": [
     {
-      "product_id": "ObjectId",
-      "quantity": "Number"
+      "_id": "ObjectId",
+      "name": "String",
+      "description": "String",
+      "price": "Number",
+      "quantity": "Number",
+      "image": "String",
+      "category": "String"
     }
-  ],
-  "total_price": "Number",
-  "note": "String"
+  ]
 }
