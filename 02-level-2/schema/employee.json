@@ -1,18 +1,9 @@
 {
   "_id": "ObjectId",
-  "first_name": {
-    "type": "String",
-    "required": true
-  },
-  "last_name": {
-    "type": "String",
-    "required": true
-  },
+  "first_name": "String",
+  "last_name": "String",
   "nif": "String",
   "telephone": "String",
-  "role": {
-    "type": "String",
-    "required": true
-  },
+  "role": "String",
   "shop_id": "ObjectId"
 }

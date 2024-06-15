@@ -1,12 +1,6 @@
 {
   "_id": "ObjectId",
-  "name": {
-    "type": "String",
-    "required": true
-  },
-  "description": {
-    "type": "String",
-    "required": true
-  },
+  "name": "String",
+  "description": "String",
   "creation_date": "Date"
 }

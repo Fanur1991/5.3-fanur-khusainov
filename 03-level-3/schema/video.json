@@ -1,13 +1,7 @@
 {
   "_id": "ObjectId",
-  "title": {
-    "type": "String",
-    "required": true
-  },
-  "description": {
-    "type": "String",
-    "required": true
-  },
+  "title": "String",
+  "description": "String",
   "size": "String",
   "video_file_name": "String",
   "duration": "String",

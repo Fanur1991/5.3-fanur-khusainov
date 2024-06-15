@@ -6,12 +6,10 @@ Development of MongoDB database structures for managing an optician's office, a 
 
 The project focuses on managing an optician's office called. Here are the key points detailed:
 
-| **Collections** | **Attributes**                                                                                                           |
-| --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Suppliers     | Name, address (street, number, floor, door, city, postal code, country), telephone, fax, NIF.                       |
-| Glasses           | Brand, glass prescription, type of frame (floating, paste or metallic), frame color, glass color, price. |
-| Customers        | Name, postal address, telephone, email, registration date, client-recommender.                         |
-| Sales          | Employee who made the sale, date and time of the sale.                                                                |
+| **Collections** | **Attributes**                                                       |
+| --------------- | -------------------------------------------------------------------- |
+| Glasses         | Brand, frame_types, provider, telephone, fax, nif, price, bought_by. |
+| Customers       | Name, address, telephone, email, registration_date, last_shoppings   |
 
 #### Modeling:
 
@@ -33,13 +31,12 @@ The project focuses on managing an optician's office called. Here are the key po
 
 This level focuses on the design of an ordering website for a food delivery ordering store. Highlights:
 
-| **Collections**      | **Attributes**                                                            |
-| -------------------- | ------------------------------------------------------------------------ |
-| Customers             | Unique identifier, name, address, zip code, telephone number.         |
-| Orders              | Date/time, type of delivery, products (quantity and types), total price. |
-| Products            | Unique identifier, name, description, image, price, etc..                |
-| Categories of Pizzas | Unique identifier, name.                                             |
-| Employees            | Unique identifier, name, surname, ID number, telephone number, role.              |
+| **Collections** | **Attributes**                                                                        |
+| --------------- | ------------------------------------------------------------------------------------- |
+| Customers       | id, first_name, last_name, address, postal_code, city, province, telephone            |
+| Order           | customer_id, shop_id, order_date, delivery_type, total_price, note, delivery,products |
+| Employee        | id, first_name, last_name, nif, telephone, role, shop_id.                             |
+| Shop            | id, address, postal_code, city, province                                              |
 
 ### Modeling:
 
@@ -58,16 +55,17 @@ This level focuses on the design of an ordering website for a food delivery orde
 
 This level represents a reduced version of YouTube with the following features:
 
-| **Collections**        | **Attributes**                                                                                                       |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Users               | id, email, password, username, date of birth, gender, country, zip code.                           |
-| Videos                 | id, title, description, size, video file name, duration, thumbnail, views, likes, dislikes. |
-| Channels                | id, name, description, creation date.                                                                         |
-| Playlists | id, name, creation date, status (public or private).                                                          |
+| **Collections** | **Attributes**                                                                                                               |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| User            | id, email, password, username, birthdate, gender, country, postal_code, subscriptions                                        |
+| Video           | id, title, description, size, video_file_name, duration, thumbnail, views, likes, dislikes, status, tags, uploader, comments |
+| Channel         | id, name, description, creation_date date.                                                                                   |
+| Playlist        | id, name, creation_date, status, videos                                                                                      |
 
 #### Modeling:
 
 1. **Database design for a scaled-down version of YouTube.**
+
 - The exercise asks you to consider the information needed to manage users, videos, channels and playlists.
 <p align="center">
  <img src="./03-level-3/taskView/view.jpg">

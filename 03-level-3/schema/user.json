@@ -1,19 +1,8 @@
 {
   "_id": "ObjectId",
-  "email": {
-    "type": "String",
-    "required": true,
-    "unique": true
-  },
-  "password": {
-    "type": "String",
-    "required": true
-  },
-  "username": {
-    "type": "String",
-    "required": true,
-    "unique": true
-  },
+  "email": "String",
+  "password": "String",
+  "username": "String",
   "birthdate": "Date",
   "gender": "String",
   "country": "String",

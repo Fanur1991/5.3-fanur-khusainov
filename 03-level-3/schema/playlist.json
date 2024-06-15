@@ -1,9 +1,6 @@
 {
   "_id": "ObjectId",
-  "name": {
-    "type": "String",
-    "required": true
-  },
+  "name": "String",
   "creation_date": "Date",
   "status": "String",
   "videos": [
