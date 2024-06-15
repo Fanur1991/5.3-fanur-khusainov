@@ -1,78 +1,79 @@
-# Estructura de datos MongoDB
+# MongoDB data structure
 
-Desarrollo de estructuras de bases de datos MongoDB para la gestión de una óptica, una tienda de comida a domicilio y una versión reducida de YouTube.
+Development of MongoDB database structures for managing an optician's office, a food delivery store, and a scaled-down version of YouTube.
 
-### Nivel 1 - Optica
+### Level 1 - Optic
 
-El proyecto se centra en la gestión de una óptica llamada. Aquí se detallan los puntos clave:
+The project focuses on managing an optician's office called. Here are the key points detailed:
 
-| **Colecciones** | **Atributos**                                                                                                           |
+| **Collections** | **Attributes**                                                                                                           |
 | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| Proveedores     | Nombre, dirección (calle, número, piso, puerta, ciudad, código postal, país), teléfono, fax, NIF.                       |
-| Gafas           | Marca, graduación de vidrios, tipo de montura (flotante, pasta o metálica), color de montura, color de vidrios, precio. |
-| Clientes        | Nombre, dirección postal, teléfono, correo electrónico, fecha de registro, clienteRecomendador.                         |
-| Ventas          | Empleado que realizó la venta, fecha y hora de la venta.                                                                |
+| Suppliers     | Name, address (street, number, floor, door, city, postal code, country), telephone, fax, NIF.                       |
+| Glasses           | Brand, glass prescription, type of frame (floating, paste or metallic), frame color, glass color, price. |
+| Customers        | Name, postal address, telephone, email, registration date, client-recommender.                         |
+| Sales          | Employee who made the sale, date and time of the sale.                                                                |
 
-#### Modelaje:
+#### Modeling:
 
-1. **Diseño de la base de datos según la vista del cliente de la óptica.**
+1. **Database design according to the customer's view of the optician.**
 
-- El ejercicio pide que se considere la información necesaria para mostrar la interfaz gráfica proporcionada.
+- The exercise asks you to consider the information necessary to display the graphical interface provided.
 <p align="center">
     <img src="./01-level-1/01-exercise-1/taskView/view1.jpg">
 </p>
 
-2. **Diseño de la base de datos según la vista de las gafas.**
+2. **Design of the database according to the vision of the glasses.**
 
-- El ejercicio pide que se considere la información necesaria para mostrar la interfaz de las gafas.
+- The exercise asks you to consider the information necessary to display the glasses interface.
 <p align="center">
     <img src="./01-level-1/02-exercise-2/taskView/view2.jpg">
 </p>
 
-### Nivel 2 - Tienda de comida a domicilio
+### Level 2 - Food delivery store
 
-Este nivel se enfoca en el diseño de una web para pedidos de una tienda de pedidos de comida a domicilio. Puntos destacados:
+This level focuses on the design of an ordering website for a food delivery ordering store. Highlights:
 
-| **Colecciones**      | **Atributos**                                                            |
+| **Collections**      | **Attributes**                                                            |
 | -------------------- | ------------------------------------------------------------------------ |
-| Clientes             | Identificador único, nombre, dirección, código postal, teléfono.         |
-| Pedidos              | Fecha/hora, tipo de entrega, productos (cantidad y tipos), precio total. |
-| Productos            | Identificador único, nombre, descripción, imagen, precio.                |
-| Categorías de Pizzas | Identificador único, nombre.                                             |
-| Empleados            | Identificador único, nombre, apellidos, NIF, teléfono, rol.              |
+| Customers             | Unique identifier, name, address, zip code, telephone number.         |
+| Orders              | Date/time, type of delivery, products (quantity and types), total price. |
+| Products            | Unique identifier, name, description, image, price, etc..                |
+| Categories of Pizzas | Unique identifier, name.                                             |
+| Employees            | Unique identifier, name, surname, ID number, telephone number, role.              |
 
-### Modelaje:
+### Modeling:
 
-1. **Diseño de la base de datos para la gestión de pedidos online.**
+1. **Database design for online order management.**
 
-- El ejercicio pide que se considere la información necesaria para manejar pedidos, clientes y productos.
+- The exercise asks you to consider the information needed to manage orders, customers and products.
 <p align="center">
   <img src="./02-level-2/taskView/view.jpg">
 </p>
 
-2. **Diseño de la base de datos desde la perspectiva de las pizzas.**
-   - El ejercicio pide que se considere la información necesaria para manejar las distintas categorías y productos de pizzas.
+2. **Database design from a pizza perspective.**
 
-### Nivel 3 - YouTube
+- The exercise asks you to consider the information needed to manage the different pizza categories and products.
 
-Este nivel representa una versión reducida de YouTube con las siguientes características:
+### Level 3 - YouTube
 
-| **Colecciones**        | **Atributos**                                                                                                       |
+This level represents a reduced version of YouTube with the following features:
+
+| **Collections**        | **Attributes**                                                                                                       |
 | ---------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| Usuarios               | id, email, contraseña, nombre de usuario, fecha de nacimiento, sexo, país, código postal.                           |
-| Videos                 | id, título, descripción, tamaño, nombre del archivo de vídeo, duración, thumbnail, reproducciones, likes, dislikes. |
-| Canales                | id, nombre, descripción, fecha de creación.                                                                         |
-| Listas de Reproducción | id, nombre, fecha de creación, estado (pública o privada).                                                          |
+| Users               | id, email, password, username, date of birth, gender, country, zip code.                           |
+| Videos                 | id, title, description, size, video file name, duration, thumbnail, views, likes, dislikes. |
+| Channels                | id, name, description, creation date.                                                                         |
+| Playlists | id, name, creation date, status (public or private).                                                          |
 
-#### Modelaje:
+#### Modeling:
 
-1. **Diseño de la base de datos para una versión reducida de YouTube.**
-- El ejercicio pide que se considere la información necesaria para manejar usuarios, videos, canales y listas de reproducción.
+1. **Database design for a scaled-down version of YouTube.**
+- The exercise asks you to consider the information needed to manage users, videos, channels and playlists.
 <p align="center">
  <img src="./03-level-3/taskView/view.jpg">
 </p>
 
-## Licencia
+## License
 
 This project is distributed under the Apache 2.0 license.
 
