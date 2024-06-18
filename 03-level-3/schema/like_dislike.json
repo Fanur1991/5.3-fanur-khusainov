@@ -1,0 +1,6 @@
+{
+  "_id": "ObjectId",
+  "user_id": "ObjectId",
+  "video_id": "ObjectId",
+  "date_time": "Date"
+}

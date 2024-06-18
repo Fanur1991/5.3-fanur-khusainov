@@ -1,0 +1,6 @@
+{
+  "_id": "ObjectId",
+  "customer_id": "ObjectId",
+  "sale_date": "Date",
+  "employee_id": "ObjectId"
+}
