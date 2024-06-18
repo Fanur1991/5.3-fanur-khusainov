@@ -1,0 +1,24 @@
+{
+  "_id": "ObjectId",
+  "name": "String",
+  "address": "String",
+  "telephone": "String",
+  "email": "String",
+  "register_date": "Date",
+  "last_shoppings": [
+    {
+      "_id": "ObjectId",
+      "brand": "String",
+      "graduation": {
+        "left": "Number",
+        "right": "Number"
+      },
+      "frame_type": "String",
+      "glass_color": {
+        "left": "String",
+        "right": "String"
+      },
+      "price": "Number"
+    }
+  ]
+}

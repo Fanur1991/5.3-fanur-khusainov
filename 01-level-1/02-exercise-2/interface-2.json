@@ -1,0 +1,32 @@
+{
+  "_id": "ObjectId",
+  "brand": "String",
+  "frame_type": ["rimless", "plastic", "metal"],
+  "provider": {
+    "_id": "ObjectId",
+    "name": "String",
+    "address": {
+      "street": "String",
+      "number": "Number",
+      "flat": "String",
+      "door": "String",
+      "city": "String",
+      "postal_code": "Number",
+      "country": "String"
+    },
+    "telephone": "String",
+    "fax": "String",
+    "nif": "String"
+  },
+  "price": "Number",
+  "bought_by": [
+    {
+      "_id": "ObjectId",
+      "name": "String",
+      "address": "String",
+      "telephone": "String",
+      "email": "String",
+      "register_date": "Date"
+    }
+  ]
+}

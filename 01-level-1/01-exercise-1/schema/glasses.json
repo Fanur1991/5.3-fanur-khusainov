@@ -5,7 +5,8 @@
     "left": "Number",
     "right": "Number"
   },
-  "frame_type": "String",
+  "frame_type": ["rimless", "plastic", "metal"],
+  "frame_color": "String",
   "glass_color": {
     "left": "String",
     "right": "String"

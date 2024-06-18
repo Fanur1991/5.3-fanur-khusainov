@@ -1,29 +1,15 @@
 {
   "_id": "ObjectId",
   "brand": "String",
-  "frame_types": ["String"],
-  "provider": {
-    "_id": "ObjectId",
-    "name": "String",
-    "address": {
-      "street": "String",
-      "number": "Number",
-      "flat": "String",
-      "door": "String",
-      "city": "String",
-      "postal_code": "Number",
-      "country": "String"
-    },
-    "telephone": "String",
-    "fax": "String",
-    "nif": "String"
+  "graduation": {
+    "left": "Number",
+    "right": "Number"
   },
-  "price": "Number",
-  "bought_by": [
-    {
-      "customer_id": "ObjectId",
-      "sale_date": "Date",
-      "employee_id": "ObjectId"
-    }
-  ]
+  "frame_type": "String",
+  "frame_color": "String",
+  "glass_color": {
+    "left": "String",
+    "right": "String"
+  },
+  "price": "Number"
 }
